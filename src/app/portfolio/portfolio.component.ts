@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-
-  constructor() { }
+  
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }

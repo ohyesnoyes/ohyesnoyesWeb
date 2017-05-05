@@ -1,0 +1,39 @@
+/* color theme
+teal: #5a97a5
+lightblue: #5fe0ff
+mdblue: #42d0f2
+brown: #3d2004
+orange #f29642
+*/
+
+
+.navbar-custom {
+	background-color:#5a97a5;
+    color:#ffffff;
+  	border-radius:0;
+    font-family: fantasy;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+  	padding-left:20px;
+  	padding-right:20px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    color:#5a97a5;
+}
+      
+.navbar-custom .navbar-brand {
+  	color:#fff;
+    font-size: 16pt;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
