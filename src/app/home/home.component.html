@@ -1,21 +1,107 @@
-<div class="row">
-  <div class="col-xs-12">
-    
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Welcome, humans!</h1>
-        <p>This site is a taste of what I can do as a developer and it contains a lot of other gems that represent me. Enjoy!</p>
-        <p>
-          <a class="btn btn-info btn-lg">Learn more</a>
-        </p>
-      </div>
-    </div>
-    
-  </div>
-</div>
+<div class="container">
 
-<div class="row">
-  <div class="col-xs-12">
-    <img src="./assets/wave1.jpg" class="img-responsive" >
+  <div class="row">
+    <div class="col-xs-12">
+      
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Welcome!</h1>
+          <p>This site is a taste of what I can do as a developer and it contains a lot of other gems that represent me. It's mostly filled with dummy content while under construction.</p>
+          <p>Sign up for my mailing list!</p>
+          <p>
+            <button class="btn btn-warning btn-lg" (click)="show = !show" disabled>{{show ? 'Sign Up' : 'Maybe Later'}}</button>
+          </p>
+          <div *ngIf="!show">
+            
+            <form action="" method="POST" role="form">
+              <!--<legend>Form title</legend>-->
+            
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <label for="">First</label>
+                    <input type="text" class="form-control" id="fName">
+                  </div>
+                  <div class="col-xs-6">
+                    <label for="">Last</label>
+                    <input type="text" class="form-control" id="lName">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" id="Email">
+                  </div>
+                </div>
+                
+              </div>
+            
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="./assets/cityNight.jpg" class="img-responsive" >
+    </div>
+  </div>
+<br>
+  <div class="row aboutMe">
+    <div class="col-xs-12">
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div>
+              <h3>About Me</h3>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              <img src="./assets/aboutMe.jpg" class="img-responsive" style="max-width:300px; float:left; padding:10px; clear:left">
+              <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend aliquam convallis. Curabitur eu sem ac diam feugiat 
+                eleifend id sed mauris. Nam dolor diam, placerat sit amet velit at, ullamcorper laoreet nibh. Nulla nisl dolor, posuere eu neque at, ornare pellentesque 
+                sapien. Aenean egestas convallis ultrices. Vivamus tincidunt lectus eget pellentesque sollicitudin. Donec felis nisl, pulvinar at lacinia rhoncus, ultrices 
+                non justo. Pellentesque facilisis scelerisque tortor sit amet tincidunt. Vivamus et risus consectetur, feugiat libero sit amet, viverra mi. Phasellus sit 
+                amet diam ex. Curabitur cursus, ligula vel commodo varius, est elit dictum est, sed faucibus ante nunc nec sem. Interdum et malesuada fames ac ante ipsum 
+                primis in faucibus. Cras ornare varius ex, in laoreet elit accumsan posuere. Donec hendrerit mi augue, sit amet placerat dui iaculis cursus. Vestibulum rhoncus 
+                luctus tortor sit amet ultricies.
+                <br>  
+                <br>
+                Praesent quis tellus venenatis, consectetur lectus at, dapibus lectus. Integer quis lectus ante. Vivamus at arcu nec nisl tincidunt tempus. Vestibulum tempor 
+                erat sit amet consectetur pulvinar. Fusce convallis ac libero ut dignissim. Curabitur fermentum mi ac congue condimentum. Nunc ac tellus a lectus gravida 
+                vestibulum. Nam a tempor enim. Suspendisse non eros turpis. Phasellus euismod interdum libero, a sodales massa sagittis congue. Curabitur tincidunt sed magna 
+                a rutrum. Sed sodales elementum metus, vel auctor massa sodales at.
+                <br>
+                <br>
+                Mauris ac massa imperdiet, ullamcorper ipsum vel, auctor diam. Sed rhoncus ut tellus a maximus. Pellentesque porta et dui ut pulvinar. Sed ut odio ut turpis 
+                placerat hendrerit ut vitae mi. Mauris varius erat vel sodales luctus. Nulla facilisi. Mauris sit amet ultrices purus, sit amet pharetra sem. Pellentesque 
+                ultrices tellus lacus, nec suscipit lectus luctus eget. Etiam sed dignissim diam, a bibendum mi. Nam sodales risus non risus bibendum, et egestas nisi 
+                vulputate. Quisque imperdiet risus vitae lorem sodales ullamcorper. Nunc dignissim nisl eu porttitor auctor.
+                </p> 
+      
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+  <div class="row serviceSection">
+    <div style="float:left; clear:left">
+      <h5>App Development</h5>
+      <img src="./assets/phone.png" class="img-responsive" style="max-width:300px">
+    </div>
+    <div style="float:inherit">
+      <h5>Graphic Design</h5>
+      <img src="./assets/graphicDesign.png" class="img-responsive" style="max-width:300px">
+    </div>
+  </div>
+
 </div>

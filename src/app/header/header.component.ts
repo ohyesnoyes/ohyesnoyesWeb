@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isIn = false; //store state
+  
+  toggleState() { //click hander
+    let bool = this.isIn;
+    this.isIn = bool === false ? true : false;
+  }
 
   constructor() { }
 

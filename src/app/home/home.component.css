@@ -1,4 +1,16 @@
+.container {
+    padding-top: 5em;
+}
+
 .jumbotron {
-    background-color: #5a97a5;
+    background-color: darkslateblue;
     color: #ffffff;
+}
+
+.aboutMe {
+    color: darkslateblue;
+}
+
+.serviceSection {
+    color: darkslateblue;
 }
